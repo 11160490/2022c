@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    for( int i=0; i<5; i++)
+    for( int a=5; a>0; a--)
     {
-        printf("電腦從0開始數 i : %d\n",i );
+        printf("a : %d a>0\n",a);
     }
 }
