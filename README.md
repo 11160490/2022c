@@ -161,7 +161,7 @@ int main()
 }
 ```
 
-##08-4 質數判斷並列出
+## 08-4 質數判斷並列出
 ```cpp
 #include <stdio.h>
 int main()
