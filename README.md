@@ -93,3 +93,87 @@ int main()
     if("a==0") printf("不管什麼東西,幾乎都成立\n");
 }
 ```
+
+## 08-1 用for畫直角三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        for (int k=1;k<=n;k++)
+        {
+            if (k<=n-i) printf(" ");
+            else printf("*");
+        }
+    printf("\n");
+    }
+}
+
+
+## 08-2 用while畫直角三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+	int n,i=1,h=1;
+	scanf("%d",&n);
+	int space=n-1;
+	while (i<=n)
+	{
+		int h=1;
+		while (h<=n)
+		{
+			if (h<=space)
+			{
+				printf(" ");
+			}
+			else
+			{
+				printf("*");
+			}
+			h++;
+		}
+		printf("\n");
+		i++;
+		space--;
+	}
+}
+
+## 08-3 判斷質數
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("判斷輸入的數字是不是質數:");
+    int n;
+    scanf("%d",&n);
+    int bad=0;
+    for(int i=2;i<n;i++)
+    {
+        if (n%i==0) bad=1;
+    }
+    if (bad==0) printf("%d 是質數",n);
+    else printf("%d 不是質數",n);
+}
+
+
+##08-4 質數判斷並列出
+```cpp
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	for(int n=2;n<=a;n++)
+	{
+		int bad=0;
+		for (int i=2;i<n;i++)
+		{
+			if (n%i==0) bad=1;
+		}
+		if (bad==0) printf("%d ",n);
+	}
+}
