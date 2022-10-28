@@ -111,7 +111,7 @@ int main()
     printf("\n");
     }
 }
-
+```
 
 ## 08-2 用while畫直角三角形
 ```cpp
@@ -141,6 +141,7 @@ int main()
 		space--;
 	}
 }
+```
 
 ## 08-3 判斷質數
 ```cpp
@@ -158,7 +159,7 @@ int main()
     if (bad==0) printf("%d 是質數",n);
     else printf("%d 不是質數",n);
 }
-
+```
 
 ##08-4 質數判斷並列出
 ```cpp
@@ -177,3 +178,4 @@ int main()
 		if (bad==0) printf("%d ",n);
 	}
 }
+```
